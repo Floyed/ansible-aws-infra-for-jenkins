@@ -18,6 +18,10 @@ jobs:
       - uses: lhotari/action-upterm@v1
       - name: Lint Playbook
 
+      - name: Cache Primes
+        id: cache-primes
+        uses: actions/cache@v2
+
         # uses: ansible/ansible-lint-action@master
         # with:
         #   targets: |

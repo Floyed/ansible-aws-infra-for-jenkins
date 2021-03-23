@@ -23,6 +23,7 @@ jobs:
             setup-infra.yaml
             start-docker-jenkins-container.yaml
             teardown-infra.yaml
+          args: "-x 204 -x 301 -x 305"
         
 
 

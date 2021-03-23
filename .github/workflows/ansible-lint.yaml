@@ -15,10 +15,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-
-      - name: Cache Primes
-        id: cache-primes
-        
+      
       - uses: actions/cache@v2
         with:
           path: ansible/ansible-lint-action

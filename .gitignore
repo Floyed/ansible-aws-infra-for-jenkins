@@ -1,0 +1,15 @@
+# Cache objects
+packer_cache/
+credentials.json
+*.sh
+# Crash log
+crash.log
+.env
+# For built boxes
+*.box
+#packer
+packer
+*.json
+vars.yaml
+
+notes.txt

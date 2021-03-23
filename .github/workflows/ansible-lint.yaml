@@ -15,17 +15,19 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: lhotari/action-upterm@v1
-      # - name: Lint Playbook
 
       - name: Cache Primes
         id: cache-primes
-        uses: actions/cache@v2
+        
+      - uses: actions/cache@v2
+        with:
+          path: ansible/ansible-lint-action
+          key: cache
 
-        # uses: ansible/ansible-lint-action@master
-        # with:
-        #   targets: |
-        #     /github/workspace/setup-infra.yaml
-        #     /github/workspace/start-docker-jenkins-container.yaml
-        #     /github/workspace/teardown-infra.yaml
-        #   args: "-x 204 -x 301 -x 305"
+      - uses: ansible/ansible-lint-action@master
+        with:
+          targets: |
+            /github/workspace/setup-infra.yaml
+            /github/workspace/start-docker-jenkins-container.yaml
+            /github/workspace/teardown-infra.yaml
+          # args: "-x 204 -x 301 -x 305"

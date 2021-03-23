@@ -1,0 +1,13 @@
+---
+vpc_name: jenkins_vpc
+aws_region: us-east-1
+profile: default
+cidr_block: 10.0.0.0/16
+vpc_subnets: 
+  private-1:
+    cidr: 10.0.1.0/24
+    az: "us-east-1b"
+
+ssh_key_name: ec2_ssh_key
+image: ami-0b6bcccb2ecac627f
+ansible_ssh_private_key_file: "/home/floyed/.ssh/aws/ec2_ssh_key.pem"

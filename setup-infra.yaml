@@ -3,4 +3,4 @@
   hosts: localhost
   roles:
     - variables
-    - setup-infra
+    - setup_infra

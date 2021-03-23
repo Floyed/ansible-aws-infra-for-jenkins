@@ -3,4 +3,4 @@
   hosts: localhost
   roles:
     - variables
-    - teardown-infra
+    - teardown_infra

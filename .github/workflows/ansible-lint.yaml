@@ -14,16 +14,13 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@2
-
+      - uses: actions/checkout@v2
+      - uses: lhotari/action-upterm@v1
       - name: Lint Playbook
         uses: ansible/ansible-lint-action@master
         with:
           targets: |
-            setup-infra.yaml
-            start-docker-jenkins-container.yaml
-            teardown-infra.yaml
-        
-
-
- 
+            /github/workspace/setup-infra.yaml
+            /github/workspace/start-docker-jenkins-container.yaml
+            /github/workspace/teardown-infra.yaml
+          args: "-x 204 -x 301 -x 305"

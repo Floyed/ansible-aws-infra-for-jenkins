@@ -20,9 +20,9 @@ jobs:
         uses: ansible/ansible-lint-action@master
         with:
           targets: |
-          setup-infra.yaml
-          start-docker-jenkins-container.yaml
-          teardown-infra.yaml
+            setup-infra.yaml
+            start-docker-jenkins-container.yaml
+            teardown-infra.yaml
         
 
 

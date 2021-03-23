@@ -11,7 +11,7 @@
 #     state: present
 
 - name: Start jenkins container
-  community.docker.docker_container: 
+  community.docker.docker_container:
     name: jenkins
     image: "jenkins:2.60.3"
     state: started

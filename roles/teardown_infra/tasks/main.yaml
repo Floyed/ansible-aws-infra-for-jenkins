@@ -14,7 +14,7 @@
 - name: EC2 Facts
   ec2_instance_facts:
     region: "{{ variables.aws_region }}"
-    filters: 
+    filters:
       "tag:Name": "jenkinsec2"
     profile: "{{ variables.profile }}"
   register: ec2

@@ -1,5 +1,4 @@
 ---
-
 #### Creating the Cluster on AWS ####
 - name: Create the cluster
   shell: |

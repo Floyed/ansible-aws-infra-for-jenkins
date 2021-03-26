@@ -1,0 +1,6 @@
+---
+- name: Setup AWS Cluster with kops
+  hosts: localhost
+  roles:
+    - variables
+    - setup_aws_cluster

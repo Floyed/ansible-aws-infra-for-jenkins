@@ -4,3 +4,4 @@
   roles:
     - variables
     - teardown_aws_cluster
+    - delete_s3_bucket

@@ -15,6 +15,7 @@ Setup Jenkins on AWS with infrastructure using Ansible
 
 `` ansible-playbook teardown-infra.yaml -vvv; ``
 
+
 ## Kubernetes cluster using kops on AWS
 
 ### Setup

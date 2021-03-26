@@ -10,6 +10,6 @@ crash.log
 #packer
 packer
 *.json
-vars.yaml
+vars.yml
 
 notes.txt
